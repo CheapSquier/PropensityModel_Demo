@@ -10,7 +10,9 @@ There are other things we may want to do to the model in the context of a market
 This model is implemented in a Jupyter Notebook, based on a [bank marketing dataset](https://archive.ics.uci.edu/ml/datasets/Bank+Marketing). Besides the usual python data libraries, also makes use of the [imbalanced-learn API](https://imbalanced-learn.org/stable/over_sampling.html) to allow more control over the balance of categories in the train and test partitions used not just for model training, but also for model evaluation. It also lets us have a consistent train/test dataset regardless of the model or evaluation type and we don't have to depend on the model having a "balance" option. Also uses the [Predictive Power Score library](https://towardsdatascience.com/rip-correlation-introducing-the-predictive-power-score-3d90808b9598) for feature selection.
 
 **TO-DO:**
-1. Add the imbalanced-learn splitting.
-2. Tune hyperparameters.
-3. Look at other models.
-4. General clean-up.
+1. Add simulated view of cost and revenue for what-if on model settings.
+2. Add the imbalanced-learn splitting.
+3. Review feature selection.
+4. Tune hyperparameters.
+5. Look at other models.
+6. General clean-up.
