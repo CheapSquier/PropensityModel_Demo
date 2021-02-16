@@ -13,6 +13,6 @@ This model is implemented in a Jupyter Notebook, based on a [bank marketing data
 1. Add simulated view of cost and revenue for what-if on model settings.
 2. Add the imbalanced-learn splitting.
 3. Review feature selection.
-4. Tune hyperparameters.
+4. Tune model threshold and hyperparameters.
 5. Look at other models.
 6. General clean-up.
