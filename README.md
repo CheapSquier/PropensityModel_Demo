@@ -10,11 +10,13 @@ There are other things we may want to do to the model in the context of a market
 This model is implemented in a Jupyter Notebook, based on a [bank marketing dataset](https://archive.ics.uci.edu/ml/datasets/Bank+Marketing). Besides the usual python data libraries, also makes use of the [imbalanced-learn API](https://imbalanced-learn.org/stable/over_sampling.html) to allow more control over the balance of categories in the train and test partitions used not just for model training, but also for model evaluation. It also lets us have a consistent train/test dataset regardless of the model or evaluation type and we don't have to depend on the model having a "balance" option. Also uses the [Predictive Power Score library](https://towardsdatascience.com/rip-correlation-introducing-the-predictive-power-score-3d90808b9598) for feature selection.
 
 **TO-DO:**
-1. Add the imbalanced-learn splitting.
-2. Tune model threshold and hyperparameters.
-3. Look at other models.
-4. General clean-up.
-5. What-if on model settings and cost & revenue parmeters
+1. General clean-up.
+   Currently the profit curve graphs are based on the last model trained. Clean that up so 
+   all models and graphs can be run at once.
+2. What-if on model settings and cost & revenue parmeters
 
 **Done:**
-Added graphs, cleaned up parts of feature selection, wrote conclusion, general clean-up
+* Added graphs, cleaned up parts of feature selection, wrote conclusion, general clean-up.
+* Tried the imbalanced-learn library but didn't like it. Ran into some errors that provided very little debug information. Focusing on parameters available in the SKlearn models seems like a better route, especially since the same methods are used in other models that are compatible with the SKlearn framework.
+* Added the XGBoost model. Similar performance to RandomForest
+* Did some tuning of hyperparameters in both RandomForest and XGBoost
